@@ -36,4 +36,4 @@ It's not on MELPA (yet!), so I recommend you do the following:
 
  - `j` and `k` are Evil motion wrappers
    around [Vertigo](https://github.com/noctuid/vertigo.el)'s `vertigo--jump` –
-   see the [README](https://github.com/noctuid/vertigo.el) for more info.
+   see the [README](https://github.com/noctuid/vertigo.el#about) for more info.
