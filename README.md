@@ -3,6 +3,7 @@
 ![fallen angel](https://github.com/daantjie/evil-hardcore.el/blob/master/fallen-angel.jpg)
 
 [![Build Status](https://travis-ci.org/daantjie/evil-hardcore.el.svg?branch=master)](https://travis-ci.org/daantjie/evil-hardcore.el)
+[![Coverage Status](https://coveralls.io/repos/github/daantjie/evil-hardcore.el/badge.svg?branch=master)](https://coveralls.io/github/daantjie/evil-hardcore.el?branch=master)
 
 I'm fed up with looking down at the keyboard and seeing my finger stuck on the
 `j` key. I know *how* to use Evil properly; I just need to get the muscle
