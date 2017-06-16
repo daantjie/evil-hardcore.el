@@ -11,6 +11,9 @@
 
 (add-to-list 'load-path evil-hardcore-root-path)
 
+(when (require 'undercover nil t)
+  (undercover "*.el"))
+
 ;; Ensure that we don't load old byte-compiled versions
 (let ((load-prefer-newer t))
   ;; (require 'evil)
