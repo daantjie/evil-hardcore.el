@@ -22,6 +22,8 @@
   (require 'espuds)
   (require 'ert))
 
+(evil-hardcore-global-mode)
+
 (Setup
  ;; Before anything has run
  )
