@@ -16,8 +16,8 @@
 
 ;; Ensure that we don't load old byte-compiled versions
 (let ((load-prefer-newer t))
-  ;; (require 'evil)
-  ;; (require 'vertigo)
+  (require 'evil)
+  (require 'vertigo)
   (require 'evil-hardcore)
   (require 'espuds)
   (require 'ert))
