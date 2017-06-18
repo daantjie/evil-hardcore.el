@@ -22,11 +22,9 @@
   (require 'espuds)
   (require 'ert))
 
-(evil-hardcore-global-mode)
 
 (Setup
- ;; Before anything has run
- )
+ (evil-hardcore-global-mode))
 
 (Before
  ;; Before each scenario is run
