@@ -29,16 +29,6 @@ buffer, wiping it beforehand."
     (erase-buffer)
     (evil-hardcore--insert-frankenstein)))
 
-(Given "^I have \"\\(.+\\)\"$"
-  (lambda (something)
-    ;; ...
-    ))
-
-(When "^I have \"\\(.+\\)\"$"
-  (lambda (something)
-    ;; ...
-    ))
-
 (Then "^the buffer should contain\\(?: \"\\(.+\\)\"\\|:\\)$"
       "Asserts that the current buffer contents are the given string."
       (lambda (expected)
@@ -50,13 +40,3 @@ buffer, wiping it beforehand."
       "Asserts that evil-hardcore-global-mode is active."
       (lambda ()
         (cl-assert evil-hardcore-global-mode nil "Expected evil-hardcore-global-mode to be t")))
-
-(And "^I have \"\\(.+\\)\"$"
-  (lambda (something)
-    ;; ...
-    ))
-
-(But "^I should not have \"\\(.+\\)\"$"
-  (lambda (something)
-    ;; ...
-    ))

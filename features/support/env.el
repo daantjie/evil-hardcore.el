@@ -40,4 +40,6 @@
  )
 
 (Fail
- (princ (buffer-string)))
+ (princ "«")
+ (princ (buffer-string))
+ (princ "»"))
