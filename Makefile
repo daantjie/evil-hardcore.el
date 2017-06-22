@@ -1,7 +1,7 @@
 all:
 	@cask
 
-test: ecukes ert
+test: ert ecukes
 
 ecukes:
 	@cask exec ecukes
