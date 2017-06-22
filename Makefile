@@ -1,9 +1,12 @@
 all:
 	@cask
 
-test: ecukes
+test: ert ecukes
 
 ecukes:
 	@cask exec ecukes
 
-.PHONY: test ecukes
+ert:
+	@cask exec ert-runner
+
+.PHONY: test ecukes ert

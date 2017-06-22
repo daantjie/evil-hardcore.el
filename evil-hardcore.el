@@ -39,17 +39,21 @@
                       (kbd "g k") #'evil-previous-line)
     map))
 
-(evil-define-motion evil-hardcore-jump-down (_)
+(evil-define-motion evil-hardcore-jump-down (count)
   "Jump down a number of lines using the home row keys."
   :type line
   :jump t ; so you can get back to where you were with ``
-  (vertigo--jump #'evil-next-line "Jump down: "))
+  (if count
+      (evil-next-line count)
+    (vertigo--jump #'evil-next-line "Jump down: ")))
 
-(evil-define-motion evil-hardcore-jump-up (_)
+(evil-define-motion evil-hardcore-jump-up (count)
   "Jump up a number of lines using the home row keys."
   :type line
   :jump t
-  (vertigo--jump #'evil-previous-line "Jump up: "))
+  (if count
+      (evil-previous-line count)
+    (vertigo--jump #'evil-previous-line "Jump up: ")))
 
 ;; Needs to be at the end so that everything else is defined.
 (define-minor-mode evil-hardcore-local-mode

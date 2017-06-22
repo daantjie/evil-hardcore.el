@@ -16,15 +16,16 @@
 
 ;; Ensure that we don't load old byte-compiled versions
 (let ((load-prefer-newer t))
-  ;; (require 'evil)
-  ;; (require 'vertigo)
+  (require 'evil)
+  (require 'vertigo)
   (require 'evil-hardcore)
   (require 'espuds)
   (require 'ert))
 
+
 (Setup
- ;; Before anything has run
- )
+  (evil-mode 1)
+  (evil-hardcore-global-mode 1))
 
 (Before
  ;; Before each scenario is run
@@ -37,3 +38,8 @@
 (Teardown
  ;; After when everything has been run
  )
+
+(Fail
+ (princ "«")
+ (princ (buffer-string))
+ (princ "»"))
