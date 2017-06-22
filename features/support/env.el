@@ -38,3 +38,6 @@
 (Teardown
  ;; After when everything has been run
  )
+
+(Fail
+ (princ (buffer-string)))
