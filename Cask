@@ -15,4 +15,6 @@
 (development
  (depends-on "ecukes")
  (depends-on "espuds")
- (depends-on "undercover"))
+ (depends-on "undercover")
+ (depends-on "ert-runner")
+ (depends-on "f"))

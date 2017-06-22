@@ -24,8 +24,8 @@
 
 
 (Setup
-  (evil-mode)
-  (evil-hardcore-global-mode))
+  (evil-mode 1)
+  (evil-hardcore-global-mode 1))
 
 (Before
  ;; Before each scenario is run

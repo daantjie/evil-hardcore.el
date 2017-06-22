@@ -46,6 +46,11 @@ buffer, wiping it beforehand."
               (message "Expected\n%s\nto be:\n%s"))
           (cl-assert (string= expected actual) nil message expected actual))))
 
+(Then "^evil-hardcore-global-mode should be active$"
+      "Asserts that evil-hardcore-global-mode is active."
+      (lambda ()
+        (cl-assert evil-hardcore-global-mode nil "Expected evil-hardcore-global-mode to be t")))
+
 (And "^I have \"\\(.+\\)\"$"
   (lambda (something)
     ;; ...

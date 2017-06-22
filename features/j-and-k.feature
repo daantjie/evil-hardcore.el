@@ -1,4 +1,4 @@
-Feature: j and k keys do vertigo jumps without a prefix arg, and normal evil motions with a prefix arg.
+Feature: j and k keys do vertigo jumps without a prefix arg, and normal evil motions with a prefix arg
 
   Scenario: j key jumps down
     Given the buffer contains an extract from Frankenstein
