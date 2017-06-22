@@ -1,4 +1,5 @@
 (require 'f)
+(require 'ert)
 
 (let* ((test-path (f-dirname (f-this-file)))
        (code-path (f-parent test-path)))

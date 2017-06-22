@@ -9,4 +9,4 @@ ecukes:
 ert:
 	@cask exec ert-runner
 
-.PHONY: test ecukes
+.PHONY: test ecukes ert
